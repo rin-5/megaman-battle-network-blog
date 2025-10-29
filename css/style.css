@@ -205,7 +205,7 @@ header ul li:hover ul.dropdown {
 
 
 .character-text-left {
-    width: 22vw;
+    width: 35vw;
     height: 95vh;
     font-size: 24px;
     display: flex;
@@ -218,7 +218,7 @@ header ul li:hover ul.dropdown {
 }
 
 .character-image-right {
-    width: 25vw;
+    width: 22vw;
     height: 95vh;
     background-image: url('../img/mmxd_MegaManExe.png');
     background-size: 100%;
@@ -232,7 +232,7 @@ header ul li:hover ul.dropdown {
     font-size: 24px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     margin-left: 15px;
@@ -598,8 +598,11 @@ header ul li:hover ul.dropdown {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-        width: 70%;
+        width: 100%;
+        height:auto;
+        margin-top:0;
     }
+
 
     .character-image-right {
         display: flex;
@@ -611,7 +614,7 @@ header ul li:hover ul.dropdown {
     .character-text-right {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: left;
         width: 70%;
@@ -718,13 +721,13 @@ header ul li:hover ul.dropdown {
         display: flex;
         background-size: cover;
         width: 90vw;
-        height: 120vh;
+        height: 180vh;
     }
 
     .character-text-left {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
         width: 70%;
@@ -734,7 +737,7 @@ header ul li:hover ul.dropdown {
         display: flex;
         background-size: 100%;
         width: 90vw;
-        height: 120vh;
+        height: 140vh;
     }
 
     .character-text-right {
@@ -842,8 +845,7 @@ header ul li:hover ul.dropdown {
         display: flex;
         background-size: cover;
         width: 90vw;
-        height: 200vh;
-        aspect-ratio: auto;
+        height: 230vh;
     }
 
     .character-text-left {
@@ -859,7 +861,7 @@ header ul li:hover ul.dropdown {
         display: flex;
         background-size: 100%;
         width: 90vw;
-        height: 150vh;
+        height: 180vh;
     }
 
     .character-text-right {
@@ -980,7 +982,7 @@ header ul li:hover ul.dropdown {
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
-        width: 100%;
+        width: auto;
     }
 
     .character-image-right {
@@ -1079,7 +1081,7 @@ header ul li:hover ul.dropdown {
     #characters {
         flex-shrink: 0;
         width: 90vw;
-        height: auto;
+        height: 150vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
