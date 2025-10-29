@@ -1,0 +1,1152 @@
+.home-header {
+    color: red;
+    background-image: url(../img/background_header.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    height: 90px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding-top: 90px;
+}
+
+#home-header-menu-icon {
+    cursor: pointer;
+}
+
+.home-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 5rem;
+    background-image: url("../img/background_footer.jpg")
+}
+
+.home-footer a {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    font-size: 24px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+header ul li ul.dropdown li {
+    display: block;
+}
+
+header ul li ul.dropdown {
+    width: 100%;
+    background-image: url(../img/background_header_items.jpg);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ 
+header ul li a:hover {
+    background-image: url(../img/background_header_items.jpg);
+}
+
+header ul li:hover ul.dropdown {
+    display: block;
+}
+
+#main-container {
+    width: 100vw;
+    height: 100%;
+    background: url("../img/36.gif") repeat;
+
+    background-repeat: repeat-y repeat-x;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    flex-shrink: 0;
+    width: 90vw;
+    height: 100vh;
+    background-image: url("../img/background-about.jpg");
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+}
+
+
+#characters {
+    flex-shrink: 0;
+    width: 90vw;
+    height: auto;
+    background-image: url("../img/background-char.jpg");
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#seasons {
+    flex-shrink: 0;
+    width: 90vw;
+    height: auto;
+    background-image: url("../img/background-seasons.jpg");
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+}
+
+#devices {
+    flex-shrink: 0;
+    width: 90vw;
+    height: 90vh;
+    background-image: url("../img/background-devices.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+#chips {
+    flex-shrink: 0;
+    width: 90vw;
+    height: 100vh;
+    background-image: url("../img/sections-background.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.main-container-about-left {
+    width: 45vw;
+    height: 95vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background-image: url('../img/aboutpicturecut.jpeg');
+    background-size: 100%;
+}
+
+.main-container-about-right {
+    width: 50vw;
+    height: 90vh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.character-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+
+
+.character-image-left {
+    width: 22vw;
+    height: 95vh;
+    margin-left: 25px;
+    background-image: url('../img/LanHikari3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+
+.character-text-left {
+    width: 22vw;
+    height: 95vh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.character-image-right {
+    width: 25vw;
+    height: 95vh;
+    background-image: url('../img/mmxd_MegaManExe.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+.character-text-right {
+    width: 22vw;
+    height: 90vh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+
+.seasons-text-left {
+    width: 40vw;
+    height: 90vh;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.seasons-images-right {
+    width: 40vw;
+    height: 100vh;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seasons-images-right_1,
+.seasons-images-right_2 {
+    width: 100%;
+    height: 48%;
+    margin-bottom: 10px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seasons-images-right_1::shadow,
+.seasons-images-right_2::shadow {
+    box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
+}
+
+.seasons-images-right_1 {
+    background-image: url('../img/seasons_img1.png');
+}
+
+.seasons-images-right_2 {
+    background-image: url('../img/seasons_img2.jpg');
+}
+
+
+
+#devices h1 {
+    text-align: left;
+}
+
+.device-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.device-image {
+    width: 25vw;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.device-image::shadow {
+    box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
+}
+
+.device-image .caption {
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.device-image:hover .caption {
+    opacity: 1;
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#original-pet {
+    background-image: url("../img/originalpet.jpg");
+}
+
+#original-pet:hover {
+    background-image: none;
+    background-color: #fff;
+}
+
+#plug-in-pet {
+    background-image: url("../img/plugin.jpg");
+}
+
+#plug-in-pet:hover {
+    background-image: none;
+    background-color: #fff;
+}
+
+#advanced-pet {
+    background-image: url("../img/advanced.jpg");
+}
+
+#advanced-pet:hover {
+    background-image: none;
+    background-color: #fff;
+}
+
+#advanced-pet-II {
+    background-image: url("../img/advanced2.jpg");
+}
+
+#advanced-pet-II:hover {
+    background-image: none;
+    background-color: #fff;
+}
+
+#progress-pet {
+    background-image: url("../img/Progress_PET_Sprite.png");
+    height: 75vh;
+}
+
+#progress-pet:hover {
+    background-image: none;
+    background-color: #fff;
+}
+
+#link-pet-ex {
+    background-image: url("../img/linkpetex.png");
+}
+
+#link-pet-ex:hover {
+    background-image: none;
+    background-color: #fff;
+}
+
+#link-pet-ex .caption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* Swiper */
+.container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container.swiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 70px 35px;
+    padding: 30px 10px;
+    padding-right: 30px;
+    margin-left: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.card-list .card-item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-list .card-item .card-link {
+    width: 25vw;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 14px 17px 4px -3px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.cannon {
+    color: green;
+    background: #d4e9cf;
+}
+
+.card-list .card-link .badge.sword {
+    color: cyan;
+    background: #dcfffc;
+}
+
+.card-list .card-link .badge.minibomb {
+    color: blue;
+    background: lightblue;
+}
+
+.card-list .card-link .badge.fumikomizan {
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.card-list .card-link .badge.shockwave {
+    color: gold;
+    background: rgb(255, 255, 237);
+}
+
+.card-list .card-link .badge.area_steal {
+    color: red;
+    background: #ffc4c4;
+}
+
+.card-list .card-link .badge.varsword {
+    color: greenyellow;
+    background: rgb(222, 255, 222);
+}
+
+.card-list .card-link .badge.yoyo_anime {
+    color: #b3b3b3;
+    background: #d4d4d4;
+}
+
+.card-list .card-link .badge.synchro_chip {
+    color: mediumseagreen;
+    background: rgb(194, 228, 209);
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .go-to-top {
+        display: none;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .main-container-about-left {
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .main-container-about-right {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #characters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .character-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-image-left {
+        display: flex;
+        background-size: 100%;
+        width: 100%;
+        height: 160vh;
+    }
+
+    .character-text-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 70%;
+    }
+
+    .character-image-right {
+        display: flex;
+        background-size: 100%;
+        width: 100%;
+        height: 160vh;
+    }
+
+    .character-text-right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: left;
+        width: 70%;
+    }
+
+    .character-text-right h2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: flex-start;
+    }
+
+    #seasons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .seasons-text-left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .seasons-images-right {
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #devices {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .device-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .device-image {
+        width: 90vw;
+        height: 90vh;
+        border-radius: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    /* Chips section automatically adjusts itself.*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    .go-to-top {
+        display: none;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .main-container-about-left {
+        display: flex;
+        background-size: 100%;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .main-container-about-right {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #characters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .character-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-image-left {
+        display: flex;
+        background-size: cover;
+        width: 90vw;
+        height: 120vh;
+    }
+
+    .character-text-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 70%;
+    }
+
+    .character-image-right {
+        display: flex;
+        background-size: 100%;
+        width: 90vw;
+        height: 120vh;
+    }
+
+    .character-text-right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: left;
+        width: 70%;
+    }
+
+    .character-text-right h2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: flex-start;
+    }
+
+    #seasons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .seasons-text-left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .seasons-images-right {
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #devices {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .device-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .device-image {
+        width: 90vw;
+        height: 90vh;
+        border-radius: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    /* Chips section automatically adjusts itself.*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .main-container-about-left {
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .main-container-about-right {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #characters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .character-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-image-left {
+        display: flex;
+        background-size: cover;
+        width: 90vw;
+        height: 200vh;
+        aspect-ratio: auto;
+    }
+
+    .character-text-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 70%;
+    }
+
+    .character-image-right {
+        display: flex;
+        background-size: 100%;
+        width: 90vw;
+        height: 150vh;
+    }
+
+    .character-text-right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: left;
+        width: 70%;
+    }
+
+
+    .character-text-right h2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: flex-start;
+    }
+
+    #seasons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .seasons-text-left {
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+    }
+
+    .seasons-images-right {
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #devices {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .device-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .device-image {
+        width: 40vw;
+        height: cover;
+        border-radius: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+
+    /* Chips section automatically adjusts itself.*/
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .main-container-about-left {
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .main-container-about-right {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #characters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .character-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .character-image-left {
+        display: flex;
+        width: 100%;
+        height: 250vh;
+        background-size: 100%;
+    }
+
+    .character-text-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .character-image-right {
+        display: flex;
+        width: 70vw;
+        height: 200vh;
+        background-size: 100%;
+    }
+
+    .character-text-right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .character-text-right h2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: flex-start;
+    }
+
+    #seasons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .seasons-text-left {
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+    }
+
+    .seasons-images-right {
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #devices {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .device-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .device-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .device-image {
+        width: 25vw;
+        height: 50vh;
+        border-radius: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #about {
+        flex-shrink: 0;
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #characters {
+        flex-shrink: 0;
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .character-content {
+        flex-direction: row;
+    }
+
+    .character-image-left {
+        display: flex;
+        width: 90%;
+        height: 130vh;
+        background-size: 100%;
+    }
+
+    .character-image-right {
+        display: flex;
+        width: 100%;
+        height: 130vh;
+        background-size: 100%;
+    }
+
+    #seasons {
+        flex-shrink: 0;
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #devices {
+        flex-shrink: 0;
+        width: 90vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .device-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .device-image {
+        width: 25vw;
+        height: 50vh;
+        border-radius: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #link-pet-ex {
+        height: 100vh;
+    }
+
+    /* Chips section automatically adjusts itself.*/
+}
