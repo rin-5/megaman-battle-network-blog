@@ -8,7 +8,7 @@ source.connect(gainNode).connect(audioCtx.destination);
 
 function listenToHomeHeaderMenuIcon() {
     let homeHeaderMenuIcon = document.getElementById("home-header-menu-icon");
-    homeHeaderMenuIcon.addEventListener("click", changeColor);
+    homeHeaderMenuIcon.addEventListener("click", playBarrierSound);
 
 }
 function playBarrierSound() {

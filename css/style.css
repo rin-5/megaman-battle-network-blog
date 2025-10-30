@@ -967,6 +967,7 @@ header ul li:hover ul.dropdown {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        height:auto;
     }
 
     .character-image-left {
@@ -1081,7 +1082,7 @@ header ul li:hover ul.dropdown {
     #characters {
         flex-shrink: 0;
         width: 90vw;
-        height: 150vh;
+        height: 180vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
