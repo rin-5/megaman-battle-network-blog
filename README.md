@@ -4,9 +4,10 @@ A small webpage made with HTML, CSS and JavaScript I made for a vocational schoo
 ## Getting Started
 In order to view this page, you'll need to have the following things:
 - Visual Studio Code installed on your computer.
+- Git installed on your computer
 - The Live Server extension installed.
 
-If you have that, you can right-click the index-html and pick Open Live Server and voilà! You'll have a window in your default navigator running the webpage.
+If you have that, open a Git Bash terminal and put `git clone https://github.com/rin_5/megaman-battle-network-blog.git` in the terminal. After that, you can right-click the index-html and pick Open Live Server and voilà! You'll have a window in your default navigator running the webpage.
 
 
 ## Authors
@@ -25,7 +26,7 @@ This project is not affiliated with or endorsed by CAPCOM or the *Rockman.EXE* p
 No Creative Commons or open-source license applies to these third-party materials, as they contain copyrighted material.
 
 
-### Things to take into account
+## Things to take into account
 I tried fixing the HTML so it was valid with the W3C Validator, but I have nine errors I cannot fix. The buttons, which are the thing that's giving me an error with the validator, cannot be taken out due to their CSS formatting. I followed a tutorial to a T, so I'm very sure that it cannot be taken out of the ``<a>`` tags the buttons are inside of.
 
 ## Acknowledgments
