@@ -6,6 +6,7 @@ A small webpage made with HTML, CSS and JavaScript I made for a vocational schoo
 In order to view this page, you'll need to have the following things:
 - Visual Studio Code installed on your computer.
 - The Live Server extension installed.
+
 If you have that, you can right-click the index-html and pick Open Live Server and voilà! You'll have a window in your default navigator running the webpage.
 
 
