@@ -75,7 +75,7 @@ header ul li ul.dropdown {
     display: none;
 }
 
- 
+
 header ul li a:hover {
     background-image: url(../img/background_header_items.jpg);
 }
@@ -528,24 +528,6 @@ header ul li:hover ul.dropdown {
     font-weight: 600;
 }
 
-.card-list .card-link .card-button {
-    height: 35px;
-    width: 35px;
-    color: #5372F0;
-    border-radius: 50%;
-    margin: 30px 0 5px;
-    background: none;
-    cursor: pointer;
-    border: 2px solid #5372F0;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
-}
-
-.card-list .card-link:hover .card-button {
-    color: #fff;
-    background: #5372F0;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .go-to-top {
@@ -599,8 +581,8 @@ header ul li:hover ul.dropdown {
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height:auto;
-        margin-top:0;
+        height: auto;
+        margin-top: 0;
     }
 
 
@@ -967,7 +949,7 @@ header ul li:hover ul.dropdown {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height:auto;
+        height: auto;
     }
 
     .character-image-left {
