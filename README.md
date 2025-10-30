@@ -26,9 +26,6 @@ This project is not affiliated with or endorsed by CAPCOM or the *Rockman.EXE* p
 No Creative Commons or open-source license applies to these third-party materials, as they contain copyrighted material.
 
 
-## Things to take into account
-I tried fixing the HTML so it was valid with the W3C Validator, but I have nine errors I cannot fix. The buttons, which are the thing that's giving me an error with the validator, cannot be taken out due to their CSS formatting. I followed a tutorial to a T, so I'm very sure that it cannot be taken out of the ``<a>`` tags the buttons are inside of.
-
 ## Acknowledgments
 
   - Huge thanks to Billie Thompson's wonderful README template!
