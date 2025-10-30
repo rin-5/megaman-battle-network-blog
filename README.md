@@ -26,7 +26,7 @@ No Creative Commons or open-source license applies to these third-party material
 
 
 ### Things to take into account
-I tried fixing the HTML so it was valid with the W3C Validator, but I have nine errors I cannot fix. The buttons, which are the thing that's giving me  error with the validator, cannot be taken out due to their CSS formatting. I followed a tutorial to a T, so I'm very sure that it cannot be taken out of the ``<a>`` tags the buttons are inside of.
+I tried fixing the HTML so it was valid with the W3C Validator, but I have nine errors I cannot fix. The buttons, which are the thing that's giving me an error with the validator, cannot be taken out due to their CSS formatting. I followed a tutorial to a T, so I'm very sure that it cannot be taken out of the ``<a>`` tags the buttons are inside of.
 
 ## Acknowledgments
 
