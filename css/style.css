@@ -873,7 +873,7 @@ header ul li:hover ul.dropdown {
         display: flex;
         background-size: cover;
         width: 90vw;
-        height: 100vh;
+        height: 180vh;
     }
 
     .character-text-left {
