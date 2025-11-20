@@ -1,7 +1,4 @@
-/*Notas para el profesor: Por si acaso, le menciono que aunque el tutorial
-que seguí sí tenía el const swiper =..., eliminaba la parte del
-const.*/
-swiper = new Swiper('.card-wrapper', {
+const swiper = new Swiper('.card-wrapper', {
   loop: true,
   spaceBetween: 30,
 

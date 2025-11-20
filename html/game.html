@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Man Battle Network - The games</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gamestyle.css">
+    
+</head>
+
+<body>
+    <header class="home-header">
+        <!-- this is the navbar -->
+        <span id="home-header-menu-icon"><i class="fa-solid fa-volume-high" style="font-size:5rem"
+                onclick=playBarrierSound()></i></span>
+        <h1
+            style="font-size:25px; color:white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            MegaMan Battle Network</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="go-to-top" style="color:white;">Anime</a></li>
+            </ul>
+        </nav>
+        <audio id="bg-music" loop>
+            <source src="../sounds/acdctown_bgm.mp3">
+        </audio>
+
+        <button class="music-button" onclick="document.getElementById('bg-music').play()">Play Music</button>
+    </header>
+    <div id="main-container">
+        <section id="parallax">
+            <div class="layer layer-back"></div>
+            <div class="layer layer-front"></div>
+        </section>
+        <section id="game-about">
+            <div class="game-text">
+                <h1><u>The games</u></h1>
+                <p>The games, known worldwide as Mega Man Battle Network, are a unique mix of a real-time action RPG,
+                    turn-based JRPG and
+                    a card game akin to Yu-Gi-Oh or the Pokémon TCG, in which you can roam the world and send your Navi
+                    to the internet. And when you fight
+                    against another Navi or a virus, you can use your weapon and with the Custom Screen send Battle
+                    Chips (the card-collecting part) for your Navi to use! It even had online play (through the GBA Link
+                    cable and with the Legacy Collection through real internet). The main themes are friendship, bonds
+                    and how technology, when misused, can be very dangerous. It had six mainline games and two
+                    spinoffs. But, down below, I haven't listed four of the other spinoffs the series has. Feel free to
+                    investigate online and list them! And be careful, they'll save on your browser, so make sure they're
+                    right!</p>
+            </div>
+            <div class="game-images">
+                <div class="game-images-right_1"></div>
+                <div class="game-images-right_2"></div>
+            </div>
+        </section>
+        <section id="games-crud">
+            <h1><u>Games in the series</u></h1>
+            <div class="c-container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form id="new-game">
+                            <div class="form-group-custom">
+                                <label for="game">Game:</label>
+                                <input type="text" id="game" />
+                                <span class="error" id="error-name" style="color: red; font-size: 25px;"></span>
+                            </div>
+                            <div class="form-group-custom">
+                                <label for="year">Year:</label>
+                                <input type="text" id="year" />
+                                <span class="error" id="error-year" style="color: red; font-size: 25px;"></span>
+                            </div>
+                            <input type="submit" value="Add game" />
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="table-games">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Games</th>
+                                        <th>Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="rows-table">
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <button id="show-table">Show Games</button>
+                        <button id="restore-table">Restore Games</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-form">
+            <div class="container-form">
+                <h2>Please, fill in the form.</h2>
+                <form id="personal-data-form">
+                    <div class="form-group-custom">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" />
+                        <span class="error" id="error-name-form"></span>
+                    </div>
+
+                    <div class="form-group-custom">
+                        <label for="surname">Surname(s):</label>
+                        <input type="text" id="surname" />
+                        <span class="error" id="error-surname" ></span>
+                    </div>
+
+                    <div class="form-group-custom">
+                        <label for="mail">E-Mail:</label>
+                        <input type="text" id="mail" />
+                        <span class="error" id="error-mail"></span>
+                    </div>
+
+                    <div class="form-group-custom">
+                        <label for="phone">Phone number:</label>
+                        <input type="text" id="phone" />
+                        <span class="error" id="error-phone"></span>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" value="submit-form">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="form-display">
+            <div class="container-display-form">
+                <h2><u>Data entered in the form</u></h2>
+                <p class="data-item"><strong>Name:</strong></p>
+                <p class="data-value" id="display-name"></p>
+                <p class="data-item"><strong>Surname:</strong></p>
+                <p class="data-value" id="display-surname"></p>
+                <p class="data-item"><strong>E-Mail:</strong></p>
+                <p class="data-value" id="display-mail"></p>
+                <p class="data-item"><strong>Phone number:</strong></p>
+                <p class="data-value" id="display-phone"></p>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="home-footer">
+        <span id="home-footer-github-icon"><i class="fa-brands fa-github"></i>
+            <a href="https://github.com/rin-5" style="font-size:25px; color:white;">My
+                github</a>
+        </span>
+        <a href="https://store.steampowered.com/sub/821963/" class="support"
+            style="font-size:25px; color:white; margin-top: 91px; margin-left:50px;">Support the saga!</a>
+    </footer>
+    <script src="https://kit.fontawesome.com/a24fe7ca05.js" crossorigin="anonymous"></script>
+    <script src="../js/showTable.js"></script>
+    <script src="../js/form-validation.js"></script>
+    <script src="../js/barrier.js"></script>
+    <script src="../js/show-data.js"></script>
+    <script src="../js/parallax.js"></script>
+</body>
+
+</html>

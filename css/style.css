@@ -13,6 +13,20 @@
 
 }
 
+.music-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.music-btn:hover {
+    background-color: rgb(92, 92, 255);
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -29,7 +43,7 @@ body {
     justify-content: center;
     color: black;
     font-size: 5rem;
-    background-image: url("../img/background_footer.jpg")
+    background-image: url("../img/background_footer.jpg");
 }
 
 .home-footer a {
@@ -110,7 +124,7 @@ header ul li:hover ul.dropdown {
 #characters {
     flex-shrink: 0;
     width: 90vw;
-    height: auto;
+    height: 160vh;
     background-image: url("../img/background-char.jpg");
     display: flex;
     flex-direction: column;
@@ -134,7 +148,7 @@ header ul li:hover ul.dropdown {
 #devices {
     flex-shrink: 0;
     width: 90vw;
-    height: 90vh;
+    height: 110vh;
     background-image: url("../img/background-devices.jpg");
     margin: 0;
     padding: 0;
@@ -167,6 +181,7 @@ header ul li:hover ul.dropdown {
     margin-left: 25px;
     background-image: url('../img/aboutpicturecut.jpeg');
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .main-container-about-right {
@@ -194,9 +209,8 @@ header ul li:hover ul.dropdown {
 
 
 .character-image-left {
-    width: 22vw;
-    height: 95vh;
-    margin-left: 25px;
+    width: 30vw;
+    height: 130vh;
     background-image: url('../img/LanHikari3.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,22 +219,21 @@ header ul li:hover ul.dropdown {
 
 
 .character-text-left {
-    width: 35vw;
-    height: 95vh;
+    width: 22vw;
+    height: 90vh;
     font-size: 24px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 15px;
     margin-top: 25px;
 }
 
 .character-image-right {
-    width: 22vw;
-    height: 95vh;
-    background-image: url('../img/mmxd_MegaManExe.png');
+    width: 30vw;
+    height: 110vh;
+    background-image: url('../img/mmxd-MegaManExe.png');
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 15px;
@@ -284,11 +297,11 @@ header ul li:hover ul.dropdown {
 }
 
 .seasons-images-right_1 {
-    background-image: url('../img/seasons_img1.png');
+    background-image: url('../img/seasons-img1.png');
 }
 
 .seasons-images-right_2 {
-    background-image: url('../img/seasons_img2.jpg');
+    background-image: url('../img/seasons-img2.jpg');
 }
 
 
@@ -303,32 +316,29 @@ header ul li:hover ul.dropdown {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 50px;
 }
 
 .device-image {
     width: 25vw;
-    height: 50vh;
+    height: 45vh;
     border-radius: 10px;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-}
+    text-align: center;
+    gap: 10px;
 
-.device-image::shadow {
+
     box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
     -webkit-box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
     -moz-box-shadow: 14px 16px 0px -1px rgba(0, 0, 0, 0.34);
 }
 
+
 .device-image .caption {
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
     opacity: 0;
     transition: all .2s ease-in-out;
+
 }
 
 .device-image:hover .caption {
@@ -337,9 +347,19 @@ header ul li:hover ul.dropdown {
     font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.device-image a {
+    color: white;
+    text-shadow: 3px -3px #000;
+    text-decoration: none;
 }
 
 #original-pet {
@@ -347,45 +367,44 @@ header ul li:hover ul.dropdown {
 }
 
 #original-pet:hover {
-    background-image: none;
-    background-color: #fff;
+    transform: rotate(10deg);
+    transition: all .2s ease-in-out;
 }
 
 #plug-in-pet {
-    background-image: url("../img/plugin.jpg");
+    background-image: url("../img/plugin.png");
 }
 
 #plug-in-pet:hover {
-    background-image: none;
-    background-color: #fff;
+    transform: rotate(10deg);
+    transition: all .2s ease-in-out;
 }
 
 #advanced-pet {
-    background-image: url("../img/advanced.jpg");
+    background-image: url("../img/advanced.png");
 }
 
 #advanced-pet:hover {
-    background-image: none;
-    background-color: #fff;
+    transform: rotate(10deg);
+    transition: all .2s ease-in-out;
 }
 
 #advanced-pet-II {
-    background-image: url("../img/advanced2.jpg");
+    background-image: url("../img/advanced2.png");
 }
 
 #advanced-pet-II:hover {
-    background-image: none;
-    background-color: #fff;
+    transform: rotate(10deg);
+    transition: all .2s ease-in-out;
 }
 
 #progress-pet {
-    background-image: url("../img/Progress_PET_Sprite.png");
-    height: 75vh;
+    background-image: url("../img/Progress-PET-Sprite.png");
 }
 
 #progress-pet:hover {
-    background-image: none;
-    background-color: #fff;
+    transform: rotate(10deg);
+    transition: all .2s ease-in-out;
 }
 
 #link-pet-ex {
@@ -393,8 +412,8 @@ header ul li:hover ul.dropdown {
 }
 
 #link-pet-ex:hover {
-    background-image: none;
-    background-color: #fff;
+    transform: rotate(10deg);
+    transition: all .2s ease-in-out;
 }
 
 #link-pet-ex .caption {
@@ -444,7 +463,7 @@ header ul li:hover ul.dropdown {
 }
 
 .card-list .card-item .card-link {
-    width: 25vw;
+    width: 40vw;
     display: block;
     background: #fff;
     padding: 18px;
@@ -459,11 +478,19 @@ header ul li:hover ul.dropdown {
     border-color: #5372F0;
 }
 
+.card-list .card-link div {
+    width: 100%;
+    height: 20rem;
+}
+
 .card-list .card-link .card-image {
     width: 100%;
-    aspect-ratio: auto;
+    height: 100%;
+
+    /*aspect-ratio: auto;*/
     object-fit: cover;
     border-radius: 10px;
+
 }
 
 .card-list .card-link .badge {
@@ -502,7 +529,7 @@ header ul li:hover ul.dropdown {
     background: rgb(255, 255, 237);
 }
 
-.card-list .card-link .badge.area_steal {
+.card-list .card-link .badge.area-steal {
     color: red;
     background: #ffc4c4;
 }
@@ -512,12 +539,12 @@ header ul li:hover ul.dropdown {
     background: rgb(222, 255, 222);
 }
 
-.card-list .card-link .badge.yoyo_anime {
+.card-list .card-link .badge.yoyo-anime {
     color: #b3b3b3;
     background: #d4d4d4;
 }
 
-.card-list .card-link .badge.synchro_chip {
+.card-list .card-link .badge.synchro-chip {
     color: mediumseagreen;
     background: rgb(194, 228, 209);
 }
@@ -531,18 +558,24 @@ header ul li:hover ul.dropdown {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .go-to-top {
+        width: 30px;
+        height: 10px;
+    }
+
+    .sections {
         display: none;
     }
 
     #about {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         height: auto;
     }
 
     .main-container-about-left {
         display: flex;
+        flex-direction: column;
         background-size: cover;
         justify-content: center;
         width: 90%;
@@ -550,7 +583,11 @@ header ul li:hover ul.dropdown {
 
     .main-container-about-right {
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: center;
+        height: auto;
     }
 
     #characters {
@@ -570,7 +607,7 @@ header ul li:hover ul.dropdown {
     .character-image-left {
         display: flex;
         background-size: 100%;
-        width: 100%;
+        width: 90%;
         height: 160vh;
     }
 
@@ -648,8 +685,8 @@ header ul li:hover ul.dropdown {
     }
 
     .device-image {
-        width: 90vw;
-        height: 90vh;
+        width: 50vw;
+        height: 25vh;
         border-radius: 10px;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -659,9 +696,10 @@ header ul li:hover ul.dropdown {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width:768px) {
+@media only screen and (min-width: 601px) and (max-width:768px) {
     .go-to-top {
-        display: none;
+        width: 30px;
+        height: 10px;
     }
 
     #about {
@@ -681,8 +719,11 @@ header ul li:hover ul.dropdown {
 
     .main-container-about-right {
         display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: flex-start;
-        align-items: center;
+        align-items: left;
+        width: 70%;
     }
 
     #characters {
@@ -777,10 +818,11 @@ header ul li:hover ul.dropdown {
     }
 
     .device-image {
-        width: 90vw;
-        height: 90vh;
+        width: 45vw;
+        height: 30vh;
+        aspect-ratio: 3/4;
         border-radius: 10px;
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -788,7 +830,7 @@ header ul li:hover ul.dropdown {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width:992px) {
+@media only screen and (min-width: 769px) and (max-width:992px) {
     #about {
         display: flex;
         flex-direction: column;
@@ -806,7 +848,11 @@ header ul li:hover ul.dropdown {
 
     .main-container-about-right {
         display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: flex-start;
+        align-items: left;
+        width: 70%;
     }
 
     #characters {
@@ -827,7 +873,7 @@ header ul li:hover ul.dropdown {
         display: flex;
         background-size: cover;
         width: 90vw;
-        height: 230vh;
+        height: 100vh;
     }
 
     .character-text-left {
@@ -904,7 +950,8 @@ header ul li:hover ul.dropdown {
 
     .device-image {
         width: 40vw;
-        height: cover;
+        height: 30vh;
+        aspect-ratio: 3/4;
         border-radius: 10px;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -915,7 +962,7 @@ header ul li:hover ul.dropdown {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width:1200px) {
+@media only screen and (min-width: 993px) and (max-width:1200px) {
     #about {
         display: flex;
         flex-direction: column;
@@ -955,7 +1002,7 @@ header ul li:hover ul.dropdown {
     .character-image-left {
         display: flex;
         width: 100%;
-        height: 250vh;
+        height: 260vh;
         background-size: 100%;
     }
 
@@ -1037,21 +1084,21 @@ header ul li:hover ul.dropdown {
         justify-content: space-around;
         align-items: flex-start;
         gap: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .device-image {
-        width: 25vw;
+        width: 45vw;
         height: 50vh;
         border-radius: 10px;
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
     #about {
         flex-shrink: 0;
         width: 90vw;
@@ -1065,73 +1112,53 @@ header ul li:hover ul.dropdown {
         flex-shrink: 0;
         width: 90vw;
         height: 180vh;
+        background-image: url("../img/background-char.jpg");
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-    }
+        font-family: sans-serif;
+}
 
-    .character-content {
-        flex-direction: row;
-    }
-
-    .character-image-left {
-        display: flex;
-        width: 90%;
-        height: 130vh;
-        background-size: 100%;
-    }
-
-    .character-image-right {
-        display: flex;
-        width: 100%;
-        height: 130vh;
-        background-size: 100%;
-    }
-
-    #seasons {
-        flex-shrink: 0;
-        width: 90vw;
-        height: auto;
+.character-content {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    #devices {
-        flex-shrink: 0;
-        width: 90vw;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .device-images {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-around;
         align-items: flex-start;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
+        width: 90%;
+        margin-bottom: 20px;
+}
 
-    .device-image {
-        width: 25vw;
-        height: 50vh;
-        border-radius: 10px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
+#seasons {
+    flex-shrink: 0;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    #link-pet-ex {
-        height: 100vh;
-    }
+#devices {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:120vh;
+}
 
-    /* Chips section automatically adjusts itself.*/
+.device-image {
+    width: 25vw;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    gap: 10px;
+}
+
+/* Chips section automatically adjusts itself.*/
 }

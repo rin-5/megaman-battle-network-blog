@@ -1,0 +1,410 @@
+#parallax {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.layer-back {
+    background-image: url("../img/parallax-image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateY(0);
+}
+
+.layer-front {
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translateY(0);
+}
+
+#game-about {
+    flex-shrink: 0;
+    width: 90vw;
+    height: 100vh;
+    background-image: url("../img/background-seasons.jpg");
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+}
+
+.game-text {
+    width: 40vw;
+    height: 90vh;
+    font-size: 25px;
+    /* Quitar el flex para texto */
+    display: block;
+    margin-left: 25px;
+    margin-top: 25px;
+    line-height: 1.5;
+    /* Para mejorar lectura */
+}
+
+.game-images {
+    width: 40vw;
+    height: 100vh;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-images-right_1,
+.game-images-right_2 {
+    width: 100%;
+    height: 48%;
+    margin-bottom: 10px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.game-images-right_1 {
+    background-image: url('../img/aboutg-1.png');
+}
+
+.game-images-right_2 {
+    background-image: url('../img/aboutg-2.png');
+}
+
+#games-crud {
+    flex-shrink: 0;
+    width: 90vw;
+    height: 100vh;
+    background-image: url("../img/background-about.jpg");
+    font-family: "Inter", sans-serif;
+}
+
+.c-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+/* Contenedor de la tabla. Le pone el márgen. Seguramente tenga que editar el width. */
+.table-games {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Estilo de tabla al estilo Bootstrap(pero sin el bootstrap B) )*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Cabeceras */
+th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+}
+
+/* Celdas */
+td {
+    padding: 10px 12px;
+    border-top: 1px solid #eee;
+}
+
+/* Filas al pasar el ratón. Eliminar. No sirven para mucho */
+tr:hover {
+    background-color: #f8f8f8;
+}
+
+/* Botón!! */
+button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: 1px solid #666;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.form-group-custom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group-custom label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group-custom input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#games-crud h1 {
+    margin-left: 70px;
+}
+
+#page-form {
+    flex-shrink: 0;
+    width: 90vw;
+    height: 100vh;
+    background-image: url("../img/sections-background.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.container-form {
+    margin-top: 8em;
+    width: 90%;
+    padding: 1em;
+    border: 2px black solid;
+    background-color: white;
+
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#personal-data-form {
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#personal-data-form>input {
+    width: 100%;
+}
+
+#personal-data-form>label {
+    margin: .5em 0;
+    width: 100%;
+}
+
+.form-submit {
+    width: 100%;
+    margin: .5em 0;
+    text-align: right;
+}
+
+.form-submit>button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+
+    padding: .5em 1em;
+    border-radius: 5px;
+
+    background-color: var(--primary-color);
+    color: var(--primary-color-inverse);
+}
+
+#personal-data-form span {
+    color: red;
+    font-size: 25px;
+    visibility: hidden;
+}
+
+#personal-data-form input[type=text] {
+    border-radius: 5px;
+    border: 2px black solid;
+    background-color: var(--input-color);
+    padding: 1em;
+}
+
+#personal-data-form input[type=text]:focus {
+    background-color: var(--input-color-focus);
+}
+
+#form-display {
+    flex-shrink: 0;
+    width: 90vw;
+    height: 60vh;
+    background-image: url("../img/sections-background.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.container-display-form {
+    margin-top: 8em;
+    width: 90%;
+    padding: 1em;
+    border: 2px black solid;
+    background-color: white;
+
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .layer-back {
+        background-image:url(../img/s-parallax-image.jpg);
+    }
+
+    #game-about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .game-text {
+        width: 90vw;
+        height: auto;
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .game-images {
+        width: 90vw;
+        height: auto;
+        margin: 20px 0;
+        justify-content: center;
+    }
+
+    .game-images-right_1,
+    .game-images-right_2 {
+        height: 200px; /* Ajustable, pero algo razonable */
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        }    
+        
+    #games-crud {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-sm-6 {
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    #table-games{
+        width: 90%;
+        margin-top:20px;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width:991px) {
+    .layer-back {
+        background-image:url(../img/s-parallax-image.jpg);
+    }
+
+
+    #game-about{
+        height:auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .game-text {
+        width: 70vw;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .game-images {
+        width: 50vw;
+        height: auto;
+        justify-content: center;
+    }
+
+    .game-images-right_1,
+    .game-images-right_2 {
+        width:400px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+
+    #games-crud {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-sm-6 {
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    #table-games{
+        width: 90%;
+        margin-top:20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #game-about {
+    height:130vh;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #game-about {
+    height:auto;
+    }
+}

@@ -1,5 +1,5 @@
 # MegaMan Battle Network Blog
-A small webpage made with HTML, CSS and JavaScript I made for a vocational school project. This installment of the project only contains the information about the MegaMan NT Warrior/Rockman.EXE anime.
+A small webpage made with HTML, CSS and JavaScript I made for a vocational school project. This, the second version, contains both the page about the anime (index.html) and a small page about the game (game.html).
 
 ## Getting Started
 In order to view this page, you'll need to have the following things:
@@ -7,7 +7,7 @@ In order to view this page, you'll need to have the following things:
 - Git installed on your computer
 - The Live Server extension installed.
 
-If you have that, open a Git Bash terminal and put `git clone https://github.com/rin_5/megaman-battle-network-blog.git` in the terminal. After that, you can right-click the index-html and pick Open Live Server and voilà! You'll have a window in your default navigator running the webpage.
+If you have that, open a Git Bash terminal and put `git clone https://github.com/rin_5/megaman-battle-network-blog.git` in the terminal. After that, you can right-click the index-html or the game.html and pick Open Live Server and voilà! You'll have a window in your default navigator running the webpage.
 
 
 ## Authors
@@ -30,7 +30,9 @@ No Creative Commons or open-source license applies to these third-party material
 
   - Huge thanks to Billie Thompson's wonderful README template!
   - Thanks to my classmate, who put a Github guide on our online campus!
-  - All content that uses original material from CAPCOM Co., Ltd, XEBEX and TVTokyo and other right holders belongs to them. I merely used it as a fan of the saga as a little fan-project for school.
+  - All content that uses original material from CAPCOM Co. Ltd, Nintendo, XEBEX and TVTokyo and other right holders belongs to them. I merely used their property as a fan of the saga as a little fan-project for school.
   - Thanks to CodingNepal for their [video on how to make a responsive card slider with HTML, CSS and JavaScript](https://youtu.be/VUtJ7FWCfZA).
   - Thanks to [this](https://stackoverflow.com/questions/10865237/website-header-hiding-behind-content-when-position-is-fixed) forum post from StackOverflow. I wouldn't have been able to fix an issue without it.
   - This page was largely based on the [Mega Man Knowledge Base](https://megaman.fandom.com/wiki/) (also found [here](https://megaman.miraheze.org/wiki)) and the [Mega Man Wiki](https://www.megamanwiki.com/wiki/Main_Page). All information and posts I hyperlinked on the page belong to the respective entry authors!
+  - Thanks to [tcrurav](https://github.com/tcrurav) for the tutorials he posted on his YouTube account for making a CRUD!
+

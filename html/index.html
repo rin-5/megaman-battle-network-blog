@@ -4,16 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mega Man Battle Network</title>
+    <title>Mega Man Battle Network - The anime</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <audio autoplay loop>
-        <source src="../sounds/acdctown_bgm.mp3">
-        <p>If you are reading this, it is because your browser does not support the audio element.</p>
-    </audio>
     <header class="home-header">
         <!-- this is the navbar -->
         <span id="home-header-menu-icon"><i class="fa-solid fa-volume-high" style="font-size:5rem"
@@ -23,9 +19,9 @@
             MegaMan Battle Network</h1>
         <nav class="navbar">
             <ul>
-                <li><a href="#" class="go-to-top" style="color:white;">Top</a></li>
+                <li><a href="game.html" class="go-to-top" style="color:white;">Games</a></li>
                 <li>
-                    <a href="#" style="color:white;">Sections ↓</a>
+                    <a href="#" class="sections" style="color:white;">Sections↓</a>
                     <ul class="dropdown">
                         <li><a href="#about">Synopsis</a></li>
                         <li><a href="#characters">Characters</a></li>
@@ -36,14 +32,21 @@
                 </li>
             </ul>
         </nav>
+<audio id="bg-music" loop>
+        <source src="../sounds/acdctown_bgm.mp3">
+    </audio>
 
+    <button class="music-button" onclick="document.getElementById('bg-music').play()">Play Music</button>
     </header>
     <!-- This is the About section -->
     <div id="main-container">
         <section id="about">
             <div class="main-container-about-left"></div>
             <div class="main-container-about-right">
-                <h2><u>About <i>Rockman.EXE/Mega Man NT Warrior</i></u></h2>
+                <div>
+                    <h2><u>About <i>Rockman.EXE/Mega Man NT Warrior</i></u></h2>
+                </div>
+                
                 <p>Mega Man NT Warrior (Or Rockman.EXE in Japan) is an action anime that aired from March 2002–September
                     2006 with 5 seasons, of which 2 had been localized, and a movie. The story is the following: in the
                     year 200X, humanity entered a new age— the Network Age —due to the advancement of the internet. Each
@@ -111,29 +114,24 @@
             <h2><u>PErsonal Terminals (PETs)</u></h2>
             <div class="device-images">
                 <div id="original-pet" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Original_PET"
-                            style="text-decoration:none;">Original PET<br>
-                            <u>Not in the anime</u></a></span>
+                    <span class="caption">
+                        <a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Original_PET">Original PET<br><u>Not in the anime</u></a>
+                    </span>
                 </div>
                 <div id="plug-in-pet" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Plug-in_PET"
-                            style="text-decoration:none;">Plug-In PET</a></span>
+                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Plug-in_PET">Plug-In PET</a></span>
                 </div>
                 <div id="advanced-pet" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET"
-                            style="text-decoration:none;">Advanced PET</a></span>
+                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET">Advanced PET</a></span>
                 </div>
                 <div id="advanced-pet-II" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET_II"
-                            style="text-decoration:none;">Advanced Pet Ⅱ</a></span>
+                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET_II">Advanced Pet Ⅱ</a></span>
                 </div>
                 <div id="progress-pet" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Progress_PET"
-                            style="text-decoration:none;">Progress PET</a></span>
+                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Progress_PET">Progress PET</a></span>
                 </div>
                 <div id="link-pet-ex" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Link_PET_EX"
-                            style="text-decoration:none;">Link PET EX(Exceed)</a></span>
+                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Link_PET_EX">Link PET EX(Exceed)</a></span>
                 </div>
             </div>
         </section>
@@ -146,28 +144,30 @@
                     <ul class="card-list swiper-wrapper">
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Cannon_(Battle_Chip)" class="card-link">
-                                <img src="../img/cannon_chip.jpg" alt="Cannon" class="card-image">
+                                <div>
+                                <img src="../img/cannon-chip.jpg" alt="Cannon" class="card-image">
+                                </div>
                                 <p class="badge cannon">Cannon</p>
                                 <h2 class="card-title">Transforms the arm into a cannon.</h2>
                             </a>
                         </li>
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Sword_(Battle_Chip)#Sword" class="card-link">
-                                <img src="../img/sword.jpg" alt="Sword" class="card-image">
+                                <div><img src="../img/sword.jpg" alt="Sword" class="card-image"></div>
                                 <p class="badge sword">Sword</p>
                                 <h2 class="card-title">Transforms the arm into a sword that disappears when broken.</h2>
                             </a>
                         </li>
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Bomb_(Battle_Chip)#Mini_Bomb" class="card-link">
-                                <img src="../img/minibomb.jpg" alt="Minibomb" class="card-image">
+                                <div><img src="../img/minibomb.jpg" alt="Minibomb" class="card-image"></div>
                                 <p class="badge minibomb">Minibomb</p>
-                                <h2 class="card-title">Transforms the arm into a sword that disappears if broken.</h2>
+                                <h2 class="card-title">Summons a small bomb with huge firepower.</h2>
                             </a>
                         </li>
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Step_Sword" class="card-link">
-                                <img src="../img/fumikomizan.jpg" alt="Step Sword" class="card-image">
+                                <div><img src="../img/fumikomizan.jpg" alt="Step Sword" class="card-image"></div>
                                 <p class="badge fumikomizan">Step Sword</p>
                                 <h2 class="card-title">Lunges forwards, then disappears and reappears behind the target,
                                     unleashing a cross slash.</h2>
@@ -175,14 +175,14 @@
                         </li>
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Mettaur_(virus)#Battle_Chips" class="card-link">
-                                <img src="../img/shockwave.jpg" alt="Shock Wave" class="card-image">
+                                <div><img src="../img/shockwave.jpg" alt="Shock Wave" class="card-image"></div>
                                 <p class="badge shockwave">Shock Wave</p>
                                 <h2 class="card-title">Makes a shockwave go forwards.</h2>
                             </a>
                         </li>
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Area_Grab" class="card-link">
-                                <img src="../img/area_steal.jpg" alt="Area Steal" class="card-image">
+                                <div><img src="../img/area-steal.jpg" alt="Area Steal" class="card-image"></div>
                                 <p class="badge area_steal">Area Steal</p>
                                 <h2 class="card-title">Teleports the Navi somewhere they choose.</h2>
                             </a>
@@ -190,7 +190,7 @@
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Sword_(Battle_Chip)#Variable_Sword"
                                 class="card-link">
-                                <img src="../img/varsword.jpg" alt="Variable Sword" class="card-image">
+                                <div><img src="../img/varsword.jpg" alt="Variable Sword" class="card-image"></div>
                                 <p class="badge varsword">Variable Sword</p>
                                 <h2 class="card-title">A rare, stronger sword that can change its range and do more than
                                     its base counterpart.</h2>
@@ -199,7 +199,7 @@
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Yort#Battle_Chips" class="card-link">
                                 <div>
-                                    <img src="../img/yoyo_anime.jpg" alt="Yo-Yo" class="card-image">
+                                    <div><img src="../img/yoyo-anime.jpg" alt="Yo-Yo" class="card-image"></div>
                                     <p class="badge yoyo_anime">Yo-Yo</p>
                                     <h2 class="card-title">Transforms the arm into a cannon that can shoot a Yoyo.</h2>
                                 </div>
@@ -207,7 +207,7 @@
                         </li>
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Synchro_Chip" class="card-link">
-                                <img src="../img/synchro_chip.png" alt="Synchro Chip" class="card-image">
+                                <div><img src="../img/synchro-chip.png" alt="Synchro Chip" class="card-image"></div>
                                 <p class="badge synchro_chip">Synchro Chip</p>
                                 <h2 class="card-title">Anime exclusive: If the bond between Navi and Operator is strong
                                     and both are inside a Dimensional Area allows the Navi and
@@ -227,6 +227,7 @@
             <a href="https://github.com/rin-5" style="font-size:25px; color:white;">My
                 github</a>
         </span>
+        <a href="https://store.steampowered.com/sub/821963/" class="support" style="font-size:25px; color:white; margin-top:91px; margin-left:50px;">Support the saga!</a>
     </footer>
     <!--The scripts for the slider:-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
