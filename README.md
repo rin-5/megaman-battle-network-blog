@@ -1,5 +1,5 @@
 # MegaMan Battle Network Blog
-A small webpage made with HTML, CSS and JavaScript I made for a vocational school project. This, the third and final (I think ¯\_(·-·)_/) iteration of the project. It contains both the page about the anime (index.html) and a small page about the game (game.html).
+A small webpage made with HTML, CSS and JavaScript I made for a vocational school project. This, the third and final (I think ┐(·ヘ·)┌) iteration of the project. It contains both the page about the anime (index.html) and a small page about the game (game.html).
 
 This project contains background music, a gif that loops as the background, parallax effects, animations, a glowing button anmong many other things!
 
@@ -32,10 +32,9 @@ No Creative Commons or open-source license applies to these third-party material
 
   - Huge thanks to Billie Thompson's wonderful README template!
   - Thanks to my classmate, who put a Github guide on our online campus!
-  - All content that uses original material from CAPCOM Co. Ltd, Nintendo, XEBEX and TVTokyo and other right holders belongs to them. I merely used their property as a fan of the saga as a little fan-project for school.
+  - All content that uses original material from CAPCOM Co. Ltd, Nintendo, XEBEX and TVTokyo and other right holders belongs to them. I merely used their property as a fan of the saga as a little fan-project for school. All pictures of the real-life toys belong to their respective posters.
   - Thanks to CodingNepal for their [video on how to make a responsive card slider with HTML, CSS and JavaScript](https://youtu.be/VUtJ7FWCfZA).
   - Thanks to [this](https://stackoverflow.com/questions/10865237/website-header-hiding-behind-content-when-position-is-fixed) forum post from StackOverflow. I wouldn't have been able to fix an issue without it.
   - This page was largely based on the [Mega Man Knowledge Base](https://megaman.fandom.com/wiki/) (also found [here](https://megaman.miraheze.org/wiki)) and the [Mega Man Wiki](https://www.megamanwiki.com/wiki/Main_Page). All information and posts I hyperlinked on the page belong to the respective entry authors!
   - Thanks to [tcrurav](https://github.com/tcrurav) for the tutorials he posted on his YouTube account for making a CRUD!
   - Thanks to Code Only's [HTML button with a WOW glowing effect](https://youtu.be/Srpm9f2vqEw) (that didn't work for some reason, but I based my button off of it!)
-
