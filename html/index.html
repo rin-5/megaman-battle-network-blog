@@ -12,12 +12,11 @@
 <body>
     <header class="home-header">
         <!-- this is the navbar -->
-        <span id="home-header-menu-icon"><i class="fa-solid fa-volume-high" style="font-size:5rem"
-                onclick=playBarrierSound()></i></span>
+        <span id="home-header-sound-icon"><i class="fa-solid fa-volume-high" style="font-size:5rem" onclick=playBarrierSound()></i></span>
         <h1
             style="font-size:25px; color:white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             MegaMan Battle Network</h1>
-        <nav class="navbar">
+        <nav class="navbar" id="mobile-menu">
             <ul>
                 <li><a href="game.html" class="go-to-top" style="color:white;">Games</a></li>
                 <li>
@@ -32,12 +31,17 @@
                 </li>
             </ul>
         </nav>
-<audio id="bg-music" loop>
-        <source src="../sounds/acdctown_bgm.mp3">
-    </audio>
+        <span id="home-header-menu-icon"><i class="fa-solid fa-bars" style="font-size:5rem"></i></span>
+        <audio id="bg-music" loop>
+            <source src="../sounds/acdctown_bgm.mp3">
+        </audio>
 
-    <button class="music-button" onclick="document.getElementById('bg-music').play()">Play Music</button>
+        <button class="music-button" onclick="document.getElementById('bg-music').play()">Play Music</button>
     </header>
+
+    <div id="scroll-gauge">
+        <div id="scroll-progress"></div>
+    </div>
     <!-- This is the About section -->
     <div id="main-container">
         <section id="about">
@@ -46,7 +50,7 @@
                 <div>
                     <h2><u>About <i>Rockman.EXE/Mega Man NT Warrior</i></u></h2>
                 </div>
-                
+
                 <p>Mega Man NT Warrior (Or Rockman.EXE in Japan) is an action anime that aired from March 2002–September
                     2006 with 5 seasons, of which 2 had been localized, and a movie. The story is the following: in the
                     year 200X, humanity entered a new age— the Network Age —due to the advancement of the internet. Each
@@ -115,23 +119,32 @@
             <div class="device-images">
                 <div id="original-pet" class="device-image">
                     <span class="caption">
-                        <a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Original_PET">Original PET<br><u>Not in the anime</u></a>
+                        <a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Original_PET">Original PET<br><u>Not
+                                in the anime</u></a>
                     </span>
                 </div>
                 <div id="plug-in-pet" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Plug-in_PET">Plug-In PET</a></span>
+                    <span class="caption"><a
+                            href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Plug-in_PET">Plug-In PET</a></span>
                 </div>
                 <div id="advanced-pet" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET">Advanced PET</a></span>
+                    <span class="caption"><a
+                            href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET">Advanced
+                            PET</a></span>
                 </div>
                 <div id="advanced-pet-II" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET_II">Advanced Pet Ⅱ</a></span>
+                    <span class="caption"><a
+                            href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Advanced_PET_II">Advanced Pet
+                            Ⅱ</a></span>
                 </div>
                 <div id="progress-pet" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Progress_PET">Progress PET</a></span>
+                    <span class="caption"><a
+                            href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Progress_PET">Progress
+                            PET</a></span>
                 </div>
                 <div id="link-pet-ex" class="device-image">
-                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Link_PET_EX">Link PET EX(Exceed)</a></span>
+                    <span class="caption"><a href="https://megaman.fandom.com/wiki/PErsonal_Terminal#Link_PET_EX">Link
+                            PET EX(Exceed)</a></span>
                 </div>
             </div>
         </section>
@@ -145,7 +158,7 @@
                         <li class="card-item swiper-slide">
                             <a href="https://megaman.fandom.com/wiki/Cannon_(Battle_Chip)" class="card-link">
                                 <div>
-                                <img src="../img/cannon-chip.jpg" alt="Cannon" class="card-image">
+                                    <img src="../img/cannon-chip.jpg" alt="Cannon" class="card-image">
                                 </div>
                                 <p class="badge cannon">Cannon</p>
                                 <h2 class="card-title">Transforms the arm into a cannon.</h2>
@@ -227,13 +240,16 @@
             <a href="https://github.com/rin-5" style="font-size:25px; color:white;">My
                 github</a>
         </span>
-        <a href="https://store.steampowered.com/sub/821963/" class="support" style="font-size:25px; color:white; margin-top:91px; margin-left:50px;">Support the saga!</a>
+        <a href="https://store.steampowered.com/sub/821963/" class="support"
+            style="font-size:25px; color:white; margin-top:91px; margin-left:50px;">Support the saga!</a>
     </footer>
     <!--The scripts for the slider:-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/script.js"></script>
     <!--End of the scripts for the slider-->
     <script src="../js/barrier.js"></script>
+    <script src="../js/scrollbar.js"></script>
+    <script src="../js/toggle-menu.js"></script>
     <!--Scripts go here:-->
     <script src="https://kit.fontawesome.com/a24fe7ca05.js" crossorigin="anonymous"></script>
 </body>

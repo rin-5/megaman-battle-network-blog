@@ -7,28 +7,34 @@
     <title>Mega Man Battle Network - The games</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/gamestyle.css">
-    
+
 </head>
 
 <body>
     <header class="home-header">
         <!-- this is the navbar -->
-        <span id="home-header-menu-icon"><i class="fa-solid fa-volume-high" style="font-size:5rem"
+        <span id="home-header-sound-icon"><i class="fa-solid fa-volume-high" style="font-size:5rem"
                 onclick=playBarrierSound()></i></span>
         <h1
             style="font-size:25px; color:white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             MegaMan Battle Network</h1>
-        <nav class="navbar">
+        <nav class="navbar" id="mobile-menu">
             <ul>
                 <li><a href="index.html" class="go-to-top" style="color:white;">Anime</a></li>
             </ul>
         </nav>
+        <span id="home-header-menu-icon"><i class="fa-solid fa-bars" style="font-size:5rem"></i></span>
         <audio id="bg-music" loop>
             <source src="../sounds/acdctown_bgm.mp3">
         </audio>
 
         <button class="music-button" onclick="document.getElementById('bg-music').play()">Play Music</button>
     </header>
+
+    <div id="scroll-gauge">
+        <div id="scroll-progress"></div>
+    </div>
+
     <div id="main-container">
         <section id="parallax">
             <div class="layer layer-back"></div>
@@ -38,8 +44,8 @@
             <div class="game-text">
                 <h1><u>The games</u></h1>
                 <p>The games, known worldwide as Mega Man Battle Network, are a unique mix of a real-time action RPG,
-                    turn-based JRPG and
-                    a card game akin to Yu-Gi-Oh or the Pokémon TCG, in which you can roam the world and send your Navi
+                    turn-based JRPG and a card game akin to Yu-Gi-Oh or the Pokémon TCG, in which you can roam the world
+                    and send your Navi
                     to the internet. And when you fight
                     against another Navi or a virus, you can use your weapon and with the Custom Screen send Battle
                     Chips (the card-collecting part) for your Navi to use! It even had online play (through the GBA Link
@@ -94,6 +100,26 @@
             </div>
         </section>
 
+        <section id="game-gate">
+            <div class="game-text">
+                <h1><u>Toys and Peripherals</u></h1>
+                <p>The games also had several toys and peripherals to use your toys with the games. Globally, only the
+                    first Advanced Pet released as a toy, but in Japan and Korea, all PETs from the Plug-In PET forwards
+                    released as toys and with Battle Chips. Though the chips could be used with the toys, from Battle
+                    Network 4 onwards, a series of devices that could connect to your Game Boy Advance were released by
+                    Capcom and Takara, the toymakers. These are the Battle Chip Gates: by connecting one to your
+                    console, you can send Chips in the middle of the battle to your navi! Some games, like the
+                    japan-exclusive Rockman.EXE 4.5 Real Operation were specifically made with this in mind. There are three models: The original
+                    one works with Battle Network 4, 4.5 and Mega Man Zero 3. Then there is the Progress Chip Gate,
+                    which works exclusively with Battle Network 5, and then the Beast Link Gate, which works with the
+                    sixth entry in the series.</p>
+            </div>
+            <div class="game-images">
+                <div class="game-gate-images-right_1"></div>
+                <div class="game-gate-images-right_2"></div>
+            </div>
+        </section>
+
         <section id="page-form">
             <div class="container-form">
                 <h2>Please, fill in the form.</h2>
@@ -107,7 +133,7 @@
                     <div class="form-group-custom">
                         <label for="surname">Surname(s):</label>
                         <input type="text" id="surname" />
-                        <span class="error" id="error-surname" ></span>
+                        <span class="error" id="error-surname"></span>
                     </div>
 
                     <div class="form-group-custom">
@@ -140,9 +166,15 @@
                 <p class="data-item"><strong>Phone number:</strong></p>
                 <p class="data-value" id="display-phone"></p>
             </div>
+            <div class="btn-wrapper">
+                <button data-glow class="button-glows"
+                    onclick="window.open('https://scratch.mit.edu/projects/1002954725','_blank')" type="button">
+                <div class="btn-text">Psst! Hey! Click me!</div>
+                
+                </button>
+            </div>
         </section>
     </div>
-
 
     <footer class="home-footer">
         <span id="home-footer-github-icon"><i class="fa-brands fa-github"></i>
@@ -152,12 +184,16 @@
         <a href="https://store.steampowered.com/sub/821963/" class="support"
             style="font-size:25px; color:white; margin-top: 91px; margin-left:50px;">Support the saga!</a>
     </footer>
+    <!--Scripts-->
     <script src="https://kit.fontawesome.com/a24fe7ca05.js" crossorigin="anonymous"></script>
     <script src="../js/showTable.js"></script>
     <script src="../js/form-validation.js"></script>
     <script src="../js/barrier.js"></script>
     <script src="../js/show-data.js"></script>
     <script src="../js/parallax.js"></script>
+    <script src="../js/scrollbar.js"></script>
+    <script src="../js/toggle-menu.js"></script>
+    <script src="../js/glowing-button.js"></script>
 </body>
 
 </html>
