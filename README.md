@@ -1,5 +1,5 @@
 # MegaMan Battle Network Blog
-A small webpage made with HTML, CSS and JavaScript I made for a vocational school project. This, the third and final (I think ¯\_(·-·)_/) iteration of the project. It contains both the page about the anime (index.html) and a small page about the game (game.html).
+A small webpage made with HTML, CSS and JavaScript I made for a vocational school project. This, the third and final (I think ┐(·ヘ·)┌) iteration of the project. It contains both the page about the anime (index.html) and a small page about the game (game.html).
 
 This project contains background music, a gif that loops as the background, parallax effects, animations, a glowing button anmong many other things!
 
