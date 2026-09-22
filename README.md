@@ -9,7 +9,7 @@ In order to view this page, you'll need to have the following things:
 - Git installed on your computer
 - The Live Server extension installed.
 
-If you have that, open a Git Bash terminal and put `git clone https://github.com/rin_5/megaman-battle-network-blog.git` in the terminal. After that, you can right-click the index-html or the game.html and pick Open Live Server and voilà! You'll have a window in your default navigator running the webpage.
+If you have that, open a Git Bash terminal and type `git clone https://github.com/rin_5/megaman-battle-network-blog.git` in the terminal. After that, you can right-click the index-html or the game.html and pick Open Live Server and voilà! You'll have a window in your default navigator running the webpage.
 
 
 ## Authors
